@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import Beers from "./Components/Beers"
+import SingleBeer from "./Components/SingleBeer"
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>THIS IS THE BEER</p>
       </header>
+      <Route path="/" component={Beers} />
+      {/* <Route path="/Beer" component={SingleBeer} /> */}
     </div>
+    </Router>
   );
 }
 
