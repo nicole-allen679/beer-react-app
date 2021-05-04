@@ -10,7 +10,6 @@ function App() {
       <h1>ALL THE BEST BEERS</h1> 
       </header>
       <Route path="/" component={Beers} />
-      {/* <Route path="/Beer" component={SingleBeer} /> */}
     </div>
     </Router>
   );

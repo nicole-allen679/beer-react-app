@@ -1,7 +1,10 @@
 .App {
   text-align: center;
-  color: bisque;
+  color: blueviolet;
   background-color: black;
+  border-style: groove;
+  border-color: coral;
+  border-width: 50px
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -11,14 +14,19 @@
 }
 
 .App-header {
-  background-color: rgb(227, 137, 40);
-  min-height: 50vh;
+  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blueviolet;
+
+  background-image: url('./Components/images/wil-stewart-UErWoQEoMrc-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .App-link {
@@ -34,3 +42,8 @@
   }
 }
 
+button {
+  font-size: 20px;
+  background-color: coral;
+  color: blueviolet ;
+}

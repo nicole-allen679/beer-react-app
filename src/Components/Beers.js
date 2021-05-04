@@ -13,8 +13,8 @@ function Beers() {
   }, [type])
 
   function getRandomBeer(){
-    const elem = Math.floor(Math.random()*beers.length)
-    setRandomBeer(beers[elem].name)
+    const rando = Math.floor(Math.random()*beers.length)
+    setRandomBeer(beers[rando].name)
   }
   return (
     <>
