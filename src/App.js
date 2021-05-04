@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+      <h2>Welcome {name}</h2>
       <form>
         <label htmlFor="name">Name:</label>
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
